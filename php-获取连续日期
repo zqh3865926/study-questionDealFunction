@@ -1,0 +1,7 @@
+$start_day='2014-10-03';
+$end_day='2014-12-31';
+while(strtotime($start_day)<=strtotime($end_day)){
+$arr_date[]=$start_day;
+$start_day=date('Y-m-d',strtotime("+1 day ",strtotime($start_day)));
+}
+echo "<pre/>";print_r($arr_date);
